@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="IFP.css">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="IFP.js"></script>
+  <title>IFP Project</title>
+  </head>
+  <body class="pagebody">
+	<h1 class="title" align="center">Image Filter Project (IFP)</h1>
+
+	<div align="center">
+
+	<form>
+		<input type='file' onchange="readURL(this);"/>
+		<input type="text" id="urlbox" value="" placeholder="Image URL" />
+		<input type="button" id="urlbtn" value="Upload"/>
+	</form>
+	<br>
+	<img id="imgview" src="http://placehold.it/350" alt="Image view"/>
+	<canvas id="myCanvas" width="0" height="0"></canvas>
+	<br>
+
+
+	<table align="center">
+
+		<tr>
+			<td class="filter" id="NoEdit" onclick="editCanvas(this.id)">No Edit</td>
+			<td class="filter" id="Jacob" onclick="editCanvas(this.id)">The UpsideDown</td>
+			<td class="filter" id="Thaddeus" onclick="editCanvas(this.id)">Thaddeus' Filter</td>
+			<td class="filter" id="Jace" onclick="editCanvas(this.id)">What is life?</td>
+			<td class="filter" id="Julian" onclick="editCanvas(this.id)">Purple People Eater</td>
+			<td class="filter" id="Michael" onclick="editCanvas(this.id)">Michael's Filter</td>
+		</tr>
+
+		<tr>
+			<td class="filter" id="Cris" onclick="editCanvas(this.id)">Cris' Filter</td>
+			<td class="filter" id="John" onclick="editCanvas(this.id)">Aesthetic</td>
+			<td class="filter" id="Nicolas" onclick="editCanvas(this.id)">Nicolas' Filter</td>
+			<td class="filter" id="Ali" onclick="editCanvas(this.id)">Ali's Filter</td>
+			<td class="filter" id="Ahmad" onclick="editCanvas(this.id)">Ahmad's Filter</td>
+			<td class="filter" id="Karol" onclick="editCanvas(this.id)">Karol's Filter</td>
+		</tr>
+
+	</table>
+
+	<br>
+	</div>
+
+  </body>
+</html>
